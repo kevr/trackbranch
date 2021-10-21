@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "trackbranch"
-version = "0.1.2"
+version = "0.1.3"
 description = "Maintain branch collection profiles for Git repositories"
 authors = ["Kevin Morris <kevr@0cost.org>"]
 maintainers = ["Kevin Morris <kevr@0cost.org>"]
