@@ -20,6 +20,11 @@ Or, clone the repository, build it and install it with pip:
 
 ### Getting Started
 
+See `trackbranch --help` for details on command line arguments
+and program usage.
+
+### Usage
+
 Create a branch profile `my-profile` consisting of `branch1` and `branch2`:
 
     # Add branch1 and branch2 to my-profile.
