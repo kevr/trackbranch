@@ -1,8 +1,16 @@
 [tool.poetry]
 name = "trackbranch"
-version = "0.1.0"
-description = ""
+version = "0.1.2"
+description = "Maintain branch collection profiles for Git repositories"
 authors = ["Kevin Morris <kevr@0cost.org>"]
+maintainers = ["Kevin Morris <kevr@0cost.org>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/kevr/trackbranch"
+keywords = ["git", "branch", "profiles"]
+packages = [
+    { include = "trackbranch" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
