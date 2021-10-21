@@ -61,6 +61,7 @@ def run_add(args: argparse.ArgumentParser):
         if branch in branches:
             print(f"error: branch '{branch}' is already in this profile")
         else:
+            print(f"added '{branch}' to '{args.profile}'")
             branches.append(branch)
     data[args.profile] = sorted(branches)
 
@@ -127,6 +128,8 @@ def run_rm(args: argparse.ArgumentParser):
             print(f"error: branch '{branch}' is not in this profile")
         else:
             branches.remove(branch)
+            print(f"removed '{branch}' from '{args.profile}'")
+
     data[args.profile] = sorted(branches)
 
     write_json_storage(data)
@@ -141,6 +144,11 @@ def run_clear(args: argparse.ArgumentParser):
     data = find_json_storage()
     if args.profile in data:
         del data[args.profile]
+        print(f"profile '{args.profile}' has been removed")
+    else:
+        print(f"error: profile '{args.profile}' could not be found")
+        return 1
+
     write_json_storage(data)
 
     return 0
