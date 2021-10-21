@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "trackbranch"
-version = "0.1.3"
+version = "0.1.4"
 description = "Maintain branch collection profiles for Git repositories"
 authors = ["Kevin Morris <kevr@0cost.org>"]
 maintainers = ["Kevin Morris <kevr@0cost.org>"]
@@ -13,7 +13,7 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

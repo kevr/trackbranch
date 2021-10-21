@@ -11,7 +11,7 @@ Users can install the `trackbranch` package via PyPi:
 
     $ pip install trackbranch
 
-Or, clone the repository, build it and install it with pip:
+Or, clone the repository, build it and install it with pip (depends on `python==^3.6`, [poetry](https://python-poetry.org/) and [pip](https://pypi.org/project/pip/)):
 
     $ poetry lock
     $ poetry update
