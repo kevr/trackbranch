@@ -1,0 +1,10 @@
+# Specific files.
+.trackbranch.json
+poetry.toml
+
+# Wildcarded files.
+*.pyc
+.*.pyc
+
+# Directories.
+/dist/
