@@ -157,27 +157,27 @@ def run_clear(args: argparse.ArgumentParser):
 def parse_args():
     epilog = """
 examples:
-    # Add branch1 and branch2 to my-profile.
-    $ trackbranch -p my-profile add branch1 branch2
+  # Add branch1 and branch2 to my-profile.
+  $ trackbranch -p my-profile add branch1 branch2
 
-    # List branches in the my-profile collection.
-    $ trackbranch -p my-profile ls
+  # List branches in the my-profile collection.
+  $ trackbranch -p my-profile ls
 
-    # Execute -c for each branch found in my-profile. The {br} specifier
-    # will be substituted with the name of the branch.
-    $ trackbranch -p my-profile exec -c 'git checkout {br}; git rebase -i base'
+  # Execute -c for each branch found in my-profile. The {br} specifier
+  # will be substituted with the name of the branch.
+  $ trackbranch -p my-profile exec -c 'git checkout {br}; git rebase -i base'
 
-    # Remove branch1 from my-profile; branch2 remains.
-    $ trackbranch -p my-profile rm branch1
+  # Remove branch1 from my-profile; branch2 remains.
+  $ trackbranch -p my-profile rm branch1
 
-    # Clear my-profile.
-    $ trackbranch -p my-profile clear
+  # Clear my-profile.
+  $ trackbranch -p my-profile clear
 
 persistence:
-    trackbranch will use the first .trackbranch.json file it finds from
-    the current directory or upwards. If none can be found, .trackbranch.json
-    will be automatically created on first command usage in the working
-    directory.
+  trackbranch will use the first .trackbranch.json file it finds from
+  the current directory or upwards. If none can be found, .trackbranch.json
+  will be automatically created on first command usage in the working
+  directory.
 """
     parser = argparse.ArgumentParser(
         formatter_class=lambda prog: argparse.RawDescriptionHelpFormatter(
